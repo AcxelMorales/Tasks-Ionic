@@ -1,0 +1,19 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Pending Tasks
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <app-listas [completed]="false"></app-listas>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" margin>
+    <ion-fab-button color="tertiary" (click)="addList()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
